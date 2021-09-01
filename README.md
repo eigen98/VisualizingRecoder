@@ -43,4 +43,8 @@ MediaRecorder recorder = new MediaRecorder();
 
 #### 04. 완성도 높이기
 
-
+-> 오디오시각화(customView의 Custom Drawing이용)   
+onDraw()를 override하는 것이 중요.   
+캔버스와 paint라는 객체를 전달받음(캔버스에 드로잉, paint는 어떻게 그릴지).   
+onDraw메소드 내부에서Paint생성 주의 (자주 호출되는 onDraw()에서 객체 생성시 성능 저하).   
+실제로 그려야할 영역 사이즈 명확하게 파악 주의(다양한 디바이스).-> onSizeChanged() 를 override
