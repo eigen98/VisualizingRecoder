@@ -18,6 +18,22 @@
 #### 02. 권한요청
 -> 녹음을 하기 위해서는 사용자에게 디바이스의 마이크에 접근을 한다는 것을 알려야함 manifast에 권한명시   
 #### 03.녹음기능 구현
+![mediarecorder_state_diagram](https://user-images.githubusercontent.com/68258365/131695820-49d2904a-c1a0-4c95-b23f-5fe35e1d9e9a.gif)
+
+-> MediaRecorder 클래스 필요
+-> 첫 상태 initial 
+
+MediaRecorder recorder = new MediaRecorder();   
+ recorder.setAudioSource(MediaRecorder.AudioSource.MIC);   //마이크 소스에 접근    
+ recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);   //컨테이너(THREE_GPP) 박스에 정리하는 역할 -> 나중에 디코더가 꺼내서 해석후 재생
+ recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);   //인코더(코덱)를 통해 소스를 AMR_NB 방식으로 압축 -> 컨테이너와 인코더 호환되는 여부 중요   
+ recorder.setOutputFile(PATH_NAME);   
+ recorder.prepare();   
+ recorder.start();   // Recording is now started   
+ ...   
+ recorder.stop();   
+ recorder.reset();   // You can reuse the object by going back to setAudioSource() step   
+ recorder.release(); // Now the object cannot be reused   
 
 #### 04. 완성도 높이기
 
