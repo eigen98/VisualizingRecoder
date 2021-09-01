@@ -35,6 +35,12 @@ MediaRecorder recorder = new MediaRecorder();
  recorder.reset();   // You can reuse the object by going back to setAudioSource() step   
  recorder.release(); // Now the object cannot be reused   
 
+![mediaplayer_state_diagram](https://user-images.githubusercontent.com/68258365/131700483-58589e49-b543-4cfa-a628-6adcd1f318b3.gif)
+
+->미디어 재생시 MediaPlayer 인스턴스 필요
+-> 처음은 idle 스테이트
+
+
 #### 04. 완성도 높이기
 
 
