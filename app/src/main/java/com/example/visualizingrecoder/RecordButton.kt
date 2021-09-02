@@ -13,6 +13,11 @@ class RecordButton (
         attrs: AttributeSet,
         ): AppCompatImageButton(context,attrs){//appCompat으로 기존 클래스를 래핑해서 정상적으로 동작
 
+
+    init {
+        setBackgroundResource(R.drawable.shape_oval_button)
+    }
+
     fun updateIconWithState(state : State){
         when(state){
             State.BEFORE_RECORDING -> {
