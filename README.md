@@ -3,6 +3,11 @@
 여기에 사용되는 기술들이 요즘 오디오스트리밍에도 활용이 된다고 하여   
 이번 프로젝트를 통해  관련된 기술들을 공부를 목표로함.   
 
+![KakaoTalk_20210902_101419483](https://user-images.githubusercontent.com/68258365/131765884-d3d8a3f0-b894-44b0-a18c-7ad5d64bb560.jpg)
+![KakaoTalk_20210902_101419483_02](https://user-images.githubusercontent.com/68258365/131765909-57a3dc47-3976-484d-9d4e-a0470d258ccc.jpg)
+![KakaoTalk_20210902_101419483_01](https://user-images.githubusercontent.com/68258365/131765896-32de8090-ed19-480f-8fdc-629c001d1451.jpg)
+
+
 ### (마이크)녹음기능
 -음성 visualizing
 -정지
